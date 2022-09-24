@@ -13,7 +13,7 @@ def task1():
         return
     else:
         print("Введено неверное число \n")
-        task1();
+        task1()
 
 
 def task2():
@@ -25,7 +25,7 @@ def task2():
     x = False
     y = False
     z = False
-    while not(x and y and z):
+    while not (x and y and z):
         check_answer(x, y, z)
         if not z:
             z = True
@@ -91,7 +91,8 @@ def task5():
     Bx = int(input("Введите координату X точки B: "))
     By = int(input("Введите координату Y точки B: "))
 
-    print(f"Расстояние между двумя точками: " + str(round(distance(Ax, Bx, Ay, By), 3)))
+    print(f"Расстояние между двумя точками: " +
+          str(round(distance(Ax, Bx, Ay, By), 3)))
 
 
 task1()
